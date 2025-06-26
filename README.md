@@ -10,8 +10,20 @@
 
 本仓库提供蓝虫具身 Mantis1.0 机器人的统一机器人描述格式（URDF）文件。
 
-![Mantis1.0 预览图](img/mantis_v1_mujoco.png) <!-- 请替换实际图片路径 -->
-
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1em;">
+  <div style="flex: 1; text-align: center;">
+    <img src="img/mantis_v1_mujoco_new.png" alt="mujoco preview" style="width: 100%; border: 1px solid #ddd;" />
+    <p><b>mujoco 预览</b></p>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <img src="img/comming_soon.png" alt="real robot preview" style="width: 100%; border: 1px solid #ddd;" />
+    <p><b>真机预览</b></p>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <img src="img/mantis_v1_rviz_new.png" alt="rviz preview" style="width: 100%; border: 1px solid #ddd;" />
+    <p><b>rviz 预览</b></p>
+  </div>
+</div>
 ## 核心特性
 
 Mantis 1.0 URDF 模型包含：
