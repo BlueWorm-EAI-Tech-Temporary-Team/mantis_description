@@ -10,20 +10,10 @@
 
 This repository provides the urdf file of Mantis1.0, designed by BlueWorm EAI Tech.
 
-<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1em;">
-  <div style="flex: 1; text-align: center;">
-    <img src="img/mantis_v1_mujoco.png" alt="mujoco preview" style="width: 100%; border: 1px solid #ddd;" />
-    <p><b>mujoco preview</b></p>
-  </div>
-  <div style="flex: 1; text-align: center;">
-    <img src="img/comming_soon.png" alt="real robot preview" style="width: 100%; border: 1px solid #ddd;" />
-    <p><b>real robot preview</b></p>
-  </div>
-  <div style="flex: 1; text-align: center;">
-    <img src="img/mantis_v1_rviz.png" alt="rviz preview" style="width: 100%; border: 1px solid #ddd;" />
-    <p><b>rviz preview</b></p>
-  </div>
-</div>
+| <img src="img/mantis_v1_mujoco.png" alt="mujoco preview" width="250"> | <img src="img/comming_soon.png" alt="real robot preview" width="250"> | <img src="img/mantis_v1_rviz.png" alt="rviz preview" width="250"> |
+|:--:|:--:|:--:|
+| **mujoco preview** | **real robot preview** | **rviz preview** |
+
 
 ## Core Features
 
