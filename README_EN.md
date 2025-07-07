@@ -14,7 +14,6 @@ This repository provides the urdf file of Mantis1.0, designed by BlueWorm EAI Te
 |:--:|:--:|:--:|
 | **mujoco preview** | **real robot preview** | **rviz preview** |
 
-
 ## Core Features
 
 Mantis 1.0 URDF includes：
