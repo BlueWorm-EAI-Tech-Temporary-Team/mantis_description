@@ -1,15 +1,5 @@
-cmake_minimum_required(VERSION 3.5)
-project(lanchong_description)
-
-# Default to C99
-if(NOT CMAKE_C_STANDARD)
-  set(CMAKE_C_STANDARD 99)
-endif()
-
-# Default to C++14
-if(NOT CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 14)
-endif()
+cmake_minimum_required(VERSION 3.8)
+project(mantis_description)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -17,27 +7,29 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
-install(
-  DIRECTORY config launch meshes rviz urdf
-  DESTINATION share/${PROJECT_NAME}
-)
-
-ament_export_dependencies(${THIS_PACKAGE_INCLUDE_DEPENDS})
+find_package(rclcpp REQUIRED)
+find_package(urdf REQUIRED)
+find_package(xacro REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
-  find_package(ament_cmake_pytest REQUIRED)
   # the following line skips the linter which checks for copyrights
-  # uncomment the line when a copyright and license is not present in all source files
-  #set(ament_cmake_copyright_FOUND TRUE)
+  # comment the line when a copyright and license is added to all source files
+  set(ament_cmake_copyright_FOUND TRUE)
   # the following line skips cpplint (only works in a git repo)
-  # uncomment the line when this package is not in a git repo
-  #set(ament_cmake_cpplint_FOUND TRUE)
+  # comment the line when this package is in a git repo and when
+  # a copyright and license is added to all source files
+  set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
-  ament_add_pytest_test(view_lanchong_launch launch/display.launch.py)
 endif()
+
+# 安装 meshes 文件夹
+install(DIRECTORY
+  meshes
+  urdf
+  rviz
+  launch
+  DESTINATION share/${PROJECT_NAME}
+)
 
 ament_package()
